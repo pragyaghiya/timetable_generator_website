@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manage</title>
+	<style type="text/css">
+	*{
+			padding: 0;
+			margin: 0;
+			
+			text-decoration: none;
+		}
+		body{
+			
+			background: url(3.jpg) no-repeat;
+			background-size: cover;
+}
+	label.logo{
+			color: red;
+			font-size: 35px;
+			line-height: 80px;
+			font-weight: bold;
+			padding: 0 60px;
+			
+
+		}
+	nav{
+			background: #000;
+			height: 80px;
+			width: 100%;
+		}
+		nav ul{
+			float: right;
+			margin-right: 30px;
+		}
+		nav ul li{
+			display: inline-block;
+			line-height: 80px;
+			margin: 0 30px;
+		}
+		nav ul li a{
+			color: white;
+			font-size: 15px;
+			padding: 7px 13px;
+			border-radius: 3px;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+		a.active,a:hover{
+			background: white;
+			color: black;
+			transition: 0.5s;
+		}
+		form{
+			width: 60%;
+			height: 75vh;
+			padding: 50px 5px 5px 10px;
+			background: linear-gradient(125deg,#ff4d4d,#4d4d4d);
+			margin-left: 20%;
+			margin-top: 2%;
+			font-family: times new roman;
+			font-size: 20px;
+			border-radius: 30px;
+		}
+		form input {
+			border-radius: 5px;
+			color: red;
+			height: 25px;
+			padding-left: 10px;
+			text-align: center;
+			
+		}
+	</style>
+</head>
+<script>
+	function add() {
+		var x=document.getElementById('dep').value;
+		var y=document.getElementById('year').value;
+		var z=document.getElementById('sec').value;
+		alert("Class Addded Sucessfully."+"\n"+"Department is : "+x+"\n"+"Year is :"+y+"Section is :"+z);
+	}
+</script>
+<body>
+	<nav>
+		<a href="home.html"><label class="logo">OTCMS</label></a>
+ 	<ul type="none">
+ 		<li><a  href="add.html">Add Subject</a></li>
+ 		<li><a href="fac.html">Add Faculty</a></li>
+ 		<li><a href="Dep.html">Add Class</a></li>
+ 		<li><a class="active" href="manage.html">Manage Class</a></li>
+ 		
+ 	</ul>
+ </nav>
+	<form align="center">
+		<label>Department </label>
+		<select text-align="center" id="dep">
+           <option selected disabled>Select Department</option>
+           <option value="it">Information Technology</option>
+           <option value="cs">Computer Science</option>
+           <option value="civil">Civil Enginnering</option>
+           <option value="mech">Mechnical Engineering</option>
+           <option value="ee">Electrical Engineering</option>
+		 </select>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 <label>Year </label>
+		<select id="year">
+           <option selected disabled>Select Year</option>
+           <option value="i">I</option>
+           <option value="ii">II</option>
+           <option value="iii">III</option>
+           <option value="iv">IV</option>
+         </select>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <label>Section </label>
+         <select id="sec">
+           <option selected disabled>Select Section</option>
+           <option>A</option>
+           <option>B</option>
+           <option>C</option>
+           <option>D</option>
+         </select><br><br><br>
+       
+       <label>Subject 1 </label>
+         <select id="sub1">
+           <option selected disabled>Select Subject</option>
+           <option>DBMS</option>
+           <option>TOC</option>
+           <option>POC</option>
+           <option>DCCN</option>
+           <option>DMS</option>
+           <option>TC</option>
+         </select>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+         <label>Faculty </label>
+         <select id="fac">
+           <option selected disabled>Select Faculty</option>
+           <option>Ram</option>
+           <option>Shayam</option>
+           <option>Nina</option>
+           <option>mina</option>
+           <option>Ramesh</option>
+           <option>Suresh</option>
+         </select>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        <label>Add Priority </label>
+         <select id="prp">
+           <option selected disabled>Select Priority</option>
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+           <option>6</option>
+         </select><br><br><br>
+
+
+         <label>Subject 2 </label>
+         <select id="sub1">
+           <option selected disabled>Select Subject</option>
+           <option>DBMS</option>
+           <option>TOC</option>
+           <option>POC</option>
+           <option>DCCN</option>
+           <option>DMS</option>
+           <option>TC</option>
+         </select>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+         <label>Faculty </label>
+         <select id="fac">
+           <option selected disabled>Select Faculty</option>
+           <option>Ram</option>
+           <option>Shayam</option>
+           <option>Nina</option>
+           <option>mina</option>
+           <option>Ramesh</option>
+           <option>Suresh</option>
+         </select>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        <label>Add Priority </label>
+         <select id="prp">
+           <option selected disabled>Select Priority</option>
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+           <option>6</option>
+         </select><br><br><br>
+         
+       
+<label>Subject 3 </label>
+         <select id="sub1">
+           <option selected disabled>Select Subject</option>
+           <option>DBMS</option>
+           <option>TOC</option>
+           <option>POC</option>
+           <option>DCCN</option>
+           <option>DMS</option>
+           <option>TC</option>
+         </select>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+         <label>Faculty </label>
+         <select id="fac">
+           <option selected disabled>Select Faculty</option>
+           <option>Ram</option>
+           <option>Shayam</option>
+           <option>Nina</option>
+           <option>mina</option>
+           <option>Ramesh</option>
+           <option>Suresh</option>
+         </select>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        <label>Add Priority </label>
+         <select id="prp">
+           <option selected disabled>Select Priority</option>
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+           <option>6</option>
+         </select><br><br><br>
+
+<label>Subject 4 </label>
+         <select id="sub1">
+           <option selected disabled>Select Subject</option>
+           <option>DBMS</option>
+           <option>TOC</option>
+           <option>POC</option>
+           <option>DCCN</option>
+           <option>DMS</option>
+           <option>TC</option>
+         </select>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+         <label>Faculty </label>
+         <select id="fac">
+           <option selected disabled>Select Faculty</option>
+           <option>Ram</option>
+           <option>Shayam</option>
+           <option>Nina</option>
+           <option>mina</option>
+           <option>Ramesh</option>
+           <option>Suresh</option>
+         </select>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        <label>Add Priority </label>
+         <select id="prp">
+           <option selected disabled>Select Priority</option>
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+           <option>6</option>
+         </select><br><br><br>
+
+         <label>Subject 5 </label>
+         <select id="sub1">
+           <option selected disabled>Select Subject</option>
+           <option>DBMS</option>
+           <option>TOC</option>
+           <option>POC</option>
+           <option>DCCN</option>
+           <option>DMS</option>
+           <option>TC</option>
+         </select>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+         <label>Faculty </label>
+         <select id="fac">
+           <option selected disabled>Select Faculty</option>
+           <option>Ram</option>
+           <option>Shayam</option>
+           <option>Nina</option>
+           <option>mina</option>
+           <option>Ramesh</option>
+           <option>Suresh</option>
+         </select>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        <label>Add Priority </label>
+         <select id="prp">
+           <option selected disabled>Select Priority</option>
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+           <option>6</option>
+         </select><br><br><br>
+
+         <label>Subject 6 </label>
+         <select id="sub1">
+           <option selected disabled>Select Subject</option>
+           <option>DBMS</option>
+           <option>TOC</option>
+           <option>POC</option>
+           <option>DCCN</option>
+           <option>DMS</option>
+           <option>TC</option>
+         </select>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+         <label>Faculty </label>
+         <select id="fac">
+           <option selected disabled>Select Faculty</option>
+           <option>Ram</option>
+           <option>Shayam</option>
+           <option>Nina</option>
+           <option>mina</option>
+           <option>Ramesh</option>
+           <option>Suresh</option>
+         </select>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        <label>Add Priority </label>
+         <select id="prp">
+           <option selected disabled>Select Priority</option>
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+           <option>6</option>
+         </select><br><br><br>
+
+
+         <input type="submit" value="Generate"  onclick="add()"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="reset"  value="Reset">
+
+	</form>
+
+</body>
+</html>
